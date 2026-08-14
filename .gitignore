@@ -1,0 +1,18 @@
+# Local configuration and secrets
+config/config.local.php
+
+# Runtime storage
+storage/uploads/*
+storage/logs/*
+storage/backups/*
+!storage/*/.gitignore
+!storage/.htaccess
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+.claude-flow/
+.claude/

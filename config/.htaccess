@@ -1,0 +1,3 @@
+# storage/ holds evidence files, logs and database backups.
+# Nothing in here may ever be served over HTTP.
+Require all denied

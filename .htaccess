@@ -1,0 +1,8 @@
+# Redirect all traffic into the public/ front controller so the application
+# root can never be browsed directly.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^$ public/ [L]
+    RewriteRule (.*) public/$1 [L]
+</IfModule>
+Options -Indexes
