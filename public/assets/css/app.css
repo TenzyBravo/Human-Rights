@@ -105,13 +105,36 @@ a:hover { text-decoration: none; }
 
 /* -------------------------------------------------------------------- hero */
 .hero {
-  position: relative; overflow: hidden;
+  position: relative; overflow: hidden; isolation: isolate;
   padding: clamp(3rem, 8vw, 6rem) 0 clamp(3rem, 6vw, 5rem);
   background:
     radial-gradient(1000px 420px at 12% -8%, rgba(32, 201, 151, .16), transparent 60%),
     radial-gradient(900px 420px at 88% 8%, rgba(13, 110, 253, .18), transparent 60%),
     var(--hr-bg);
 }
+/* Photograph washed back behind the copy. Kept faint deliberately — the
+   headline has to stay the loudest thing on the page. */
+.hero::before {
+  content: ''; position: absolute; inset: 0; z-index: -1;
+  background: url('../img/HR4.jpg') 68% 32% / cover no-repeat;
+  opacity: .30;
+  /* Fade the photograph out across the headline so nothing competes with it,
+     leaving the image legible on the trailing side of the hero. */
+  -webkit-mask-image: linear-gradient(100deg, transparent 0%, rgba(0, 0, 0, .28) 38%, #000 78%);
+          mask-image: linear-gradient(100deg, transparent 0%, rgba(0, 0, 0, .28) 38%, #000 78%);
+}
+[data-bs-theme="dark"] .hero::before { opacity: .34; }
+@media (max-width: 991.98px) {
+  /* Stacked layout puts the copy across the full width, so the photograph has to
+     retreat. Both selectors are listed so this also outranks the dark-mode rule. */
+  .hero::before,
+  [data-bs-theme="dark"] .hero::before {
+    opacity: .10;
+    -webkit-mask-image: none;
+            mask-image: none;
+  }
+}
+.hero > .container { position: relative; z-index: 1; }
 .hero h1 { font-size: clamp(2rem, 4.6vw, 3.35rem); line-height: 1.1; }
 .hero-lead { font-size: 1.06rem; color: var(--hr-muted); max-width: 34rem; }
 
@@ -129,6 +152,36 @@ a:hover { text-decoration: none; }
   color: var(--hr-primary); background: rgba(13, 110, 253, .09);
   padding: .35rem .7rem; border-radius: 999px;
 }
+
+/* --------------------------------------------------------- page banners */
+.page-banner {
+  position: relative; overflow: hidden;
+  border-radius: 20px;
+  min-height: clamp(180px, 26vw, 300px);
+  display: grid; align-items: end;
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  color: #fff;
+  box-shadow: var(--hr-shadow);
+}
+.page-banner img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover;
+  z-index: 0;
+}
+/* Scrim runs bottom-to-top so the caption keeps contrast over any photograph. */
+.page-banner::after {
+  content: ''; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(to top, rgba(8, 20, 40, .88) 0%, rgba(8, 20, 40, .45) 45%, rgba(8, 20, 40, .12) 100%);
+}
+.page-banner-body { position: relative; z-index: 2; max-width: 44rem; }
+.page-banner-body h1, .page-banner-body h2 { color: #fff; margin-bottom: .35rem; }
+.page-banner-body p { color: rgba(255, 255, 255, .88); margin-bottom: 0; }
+.page-banner .eyebrow { background: rgba(255, 255, 255, .18); color: #fff; }
+
+/* Portrait cutout used alongside body copy (e.g. the About page). */
+.figure-cutout { display: block; width: 100%; height: auto; border-radius: var(--hr-radius); }
+/* Light-backed photographs glare against a dark page — take the edge off. */
+[data-bs-theme="dark"] .figure-cutout { filter: brightness(.84) saturate(.95); }
 
 /* ------------------------------------------------------------------ cards */
 .card {
@@ -358,14 +411,20 @@ a:hover { text-decoration: none; }
 .auth-wrap { display: grid; grid-template-columns: 1fr; min-height: 100vh; }
 @media (min-width: 992px) { .auth-wrap { grid-template-columns: 1.05fr 1fr; } }
 
+/* Photograph sits under a brand-coloured wash. The wash is opaque enough to
+   hold white text at AA contrast whatever the image behind it. */
 .auth-brand {
   display: none; position: relative; color: #fff; padding: 3rem;
-  background:
-    radial-gradient(700px 380px at 20% 10%, rgba(32, 201, 151, .38), transparent 60%),
-    linear-gradient(150deg, #0a58ca, #0d6efd 42%, #0b8f6f);
+  background-image:
+    radial-gradient(700px 380px at 20% 10%, rgba(32, 201, 151, .34), transparent 62%),
+    linear-gradient(150deg, rgba(10, 88, 202, .90), rgba(13, 110, 253, .74) 45%, rgba(11, 143, 111, .88)),
+    url('../img/HR1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @media (min-width: 992px) { .auth-brand { display: grid; place-items: center; } }
-.auth-brand-inner { max-width: 30rem; }
+.auth-brand-inner { max-width: 30rem; position: relative; z-index: 1; }
 .auth-points { list-style: none; padding: 0; margin: 0; display: grid; gap: .7rem; }
 .auth-points li { display: flex; align-items: center; gap: .65rem; font-size: .92rem; }
 .auth-points i {

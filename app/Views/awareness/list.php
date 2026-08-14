@@ -1,10 +1,13 @@
 <?php /** @var array $items @var string $heading @var string $lead */ ?>
 <section class="section">
   <div class="container">
-    <div class="text-center mb-5">
-      <span class="eyebrow">Awareness</span>
-      <h1 class="section-title fw-semibold mt-3 mb-2"><?= e($heading) ?></h1>
-      <p class="text-muted mx-auto" style="max-width:42rem"><?= e($lead) ?></p>
+    <div class="page-banner mb-5">
+      <img src="<?= e(asset('img/HR2.jpg')) ?>" alt="" aria-hidden="true">
+      <div class="page-banner-body">
+        <span class="eyebrow">Awareness</span>
+        <h1 class="section-title fw-semibold mt-3"><?= e($heading) ?></h1>
+        <p><?= e($lead) ?></p>
+      </div>
     </div>
 
     <?php if ($items === []): ?>

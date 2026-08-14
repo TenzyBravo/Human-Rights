@@ -26,7 +26,7 @@
           $commitments = [
               ['bi-eye-slash', 'Confidentiality', 'Your identity is never shared outside the case team, and anonymous reports are fully supported.'],
               ['bi-clock-history', 'Timeliness', 'Every case carries a service deadline. Critical matters are actioned within three days.'],
-              ['bi-scale', 'Impartiality', 'Officers act independently of the parties involved and record every decision.'],
+              ['bi-hammer', 'Impartiality', 'Officers act independently of the parties involved and record every decision.'],
               ['bi-journal-check', 'Accountability', 'Every action on your case is logged and auditable.'],
           ];
           foreach ($commitments as [$icon, $heading, $text]): ?>
@@ -42,6 +42,10 @@
       </div>
 
       <div class="col-lg-5">
+        <img src="<?= e(asset('img/HR3.png')) ?>" class="figure-cutout mb-4"
+             alt="Raised fists supporting the two pans of a set of scales, representing equality before the law"
+             loading="lazy" width="844" height="980">
+
         <div class="card p-4">
           <h2 class="h6 fw-semibold mb-3">The rights we uphold</h2>
           <p class="text-muted small">
