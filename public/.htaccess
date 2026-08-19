@@ -4,7 +4,12 @@
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /
+
+    # Deliberately NO "RewriteBase". Without it the substitution below is resolved
+    # relative to the directory holding this file, so the same rules work whether
+    # public/ is the document root or is reached through a subdirectory such as
+    # /hrrams/. Hard-coding "RewriteBase /" sends subdirectory installs to the
+    # server root's index.php instead of this application's.
 
     # Uncomment once a TLS certificate is installed.
     # RewriteCond %{HTTPS} off
@@ -64,7 +69,30 @@ Options -Indexes -MultiViews
     Require all denied
 </FilesMatch>
 
-php_flag display_errors Off
-php_value upload_max_filesize 20M
-php_value post_max_size 60M
-php_value max_file_uploads 12
+# PHP limits. These directives only exist when PHP runs as an Apache module —
+# under FastCGI / PHP-FPM (which is what MAMP uses) an unguarded php_flag is an
+# "Invalid command" and Apache answers 500 for every request. Hence the guards.
+#
+# Running under FastCGI / PHP-FPM? Set these in php.ini instead:
+#   display_errors = Off
+#   upload_max_filesize = 20M
+#   post_max_size = 60M
+#   max_file_uploads = 12
+<IfModule mod_php.c>
+    php_flag display_errors Off
+    php_value upload_max_filesize 20M
+    php_value post_max_size 60M
+    php_value max_file_uploads 12
+</IfModule>
+<IfModule mod_php8.c>
+    php_flag display_errors Off
+    php_value upload_max_filesize 20M
+    php_value post_max_size 60M
+    php_value max_file_uploads 12
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag display_errors Off
+    php_value upload_max_filesize 20M
+    php_value post_max_size 60M
+    php_value max_file_uploads 12
+</IfModule>

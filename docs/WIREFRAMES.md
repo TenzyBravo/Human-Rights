@@ -5,6 +5,12 @@ implemented in `app/Views/`; these are the design intent behind them.
 
 Breakpoints follow Bootstrap: `sm` 576, `md` 768, `lg` 992, `xl` 1200.
 
+> **The five deliverable wireframes** — public awareness page, login, reporting form, officer
+> dashboard and case management — are presented together, with permission annotations, in
+> [SYSTEM-DESIGN-AND-AUTHENTICATION.md §3](SYSTEM-DESIGN-AND-AUTHENTICATION.md#3-wireframes).
+> The **public awareness page** (`awareness/list.php`) is documented there rather than
+> duplicated here. This file covers the public homepage and every remaining screen.
+
 ---
 
 ## 1. Public homepage — `app/Views/public/home.php`
