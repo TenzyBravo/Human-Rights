@@ -441,40 +441,40 @@ the permission that controls each region. Breakpoints follow Bootstrap:
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│ [◆ HRRAMS]  Campaigns Resources News Events Statistics Track  [Report ▸] [🌙] │
+│ [◆ HRRAMS]  Campaigns Resources News Events Statistics Track  [Report ▸] [~] │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ ┌──────────────────────────────────────────────────────────────────────────┐ │
 │ │ ░░░ full-bleed photograph, bottom-up scrim for caption contrast ░░░      │ │
 │ │                                                                          │ │
 │ │  ◦ AWARENESS                                                             │ │
 │ │  Awareness campaigns                                                     │ │
-│ │  Community programmes promoting knowledge of human rights across all      │ │
+│ │  Community programmes promoting knowledge of human rights across all     │ │
 │ │  ten provinces.                                                          │ │
 │ └──────────────────────────────────────────────────────────────────────────┘ │
 │                                                                              │
-│  ┌───────────────────┐ ┌───────────────────┐ ┌───────────────────┐          │
-│  │ [Campaign] 14 Aug │ │ [Campaign] 14 Aug │ │ [News]     12 Aug │          │
-│  │                   │ │                   │ │                   │          │
-│  │ Know Your Rights: │ │ Every Child Has   │ │ Commission Opens  │          │
-│  │ 16 Days of        │ │ a Right to School │ │ Three New         │          │
-│  │ Activism          │ │                   │ │ Provincial Desks  │          │
-│  │                   │ │                   │ │                   │          │
-│  │ A nationwide      │ │ Community         │ │ Reporting desks   │          │
-│  │ campaign against  │ │ outreach on the   │ │ are now open in   │          │
-│  │ gender-based      │ │ right to free     │ │ Muchinga, North-  │          │
-│  │ violence…         │ │ basic education…  │ │ Western, Western  │          │
-│  │                   │ │                   │ │                   │          │
-│  │ Read more →       │ │ Read more →       │ │ Read more →       │          │
-│  │        📅 25 Nov  │ │        📅 01 Mar  │ │                   │          │
-│  └───────────────────┘ └───────────────────┘ └───────────────────┘          │
-│         ↑ lifts 3px on hover, whole card is the link                        │
+│  ┌───────────────────┐ ┌───────────────────┐ ┌───────────────────┐           │
+│  │ [Campaign] 14 Aug │ │ [Campaign] 14 Aug │ │ [News]     12 Aug │           │
+│  │                   │ │                   │ │                   │           │
+│  │ Know Your Rights: │ │ Every Child Has   │ │ Commission Opens  │           │
+│  │ 16 Days of        │ │ a Right to School │ │ Three New         │           │
+│  │ Activism          │ │                   │ │ Provincial Desks  │           │
+│  │                   │ │                   │ │                   │           │
+│  │ A nationwide      │ │ Community         │ │ Reporting desks   │           │
+│  │ campaign against  │ │ outreach on the   │ │ are now open in   │           │
+│  │ gender-based      │ │ right to free     │ │ Muchinga, North-  │           │
+│  │ violence…         │ │ basic education…  │ │ Western, Western  │           │
+│  │                   │ │                   │ │                   │           │
+│  │ Read more →       │ │ Read more →       │ │ Read more →       │           │
+│  │        * 25 Nov  │ │        * 01 Mar  │ │                   │             │
+│  └───────────────────┘ └───────────────────┘ └───────────────────┘           │
+│         ↑ lifts 3px on hover, whole card is the link                         │
 │                                                                              │
-│  … 3 per row on lg, 2 on md, 1 on sm                                        │
+│  … 3 per row on lg, 2 on md, 1 on sm                                         │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │  Has your right been violated?                          [ Report now ]       │
 │  You can file a report in a few minutes, anonymously if you prefer.          │
 ├──────────────────────────────────────────────────────────────────────────────┤
-│  FOOTER — brand · hotline · Report · Learn · About · Account                  │
+│  FOOTER — brand · hotline · Report · Learn · About · Account                 │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -496,7 +496,7 @@ staying visible because it is the page's real purpose.
 
 ```
 ┌───────────────────────────────────┬──────────────────────────────────────────┐
-│ ░░ photograph under brand wash ░░ │  ← Back to site                     [🌙] │
+│ ░░ photograph under brand wash ░░ │  ← Back to site                     [~]  │
 │                                   │                                          │
 │  [◆] Human Rights Commission      │  Welcome back                            │
 │                                   │  Sign in to manage reports, cases and    │
@@ -504,15 +504,15 @@ staying visible because it is the page's real purpose.
 │  a voice.                         │                                          │
 │                                   │  Email address *                         │
 │  A secure platform for            │  ┌─────────────────────────────────────┐ │
-│  reporting violations,            │  │ ✉  you@example.org                  │ │
+│  reporting violations,            │  │ @  you@example.org                  │ │
 │  tracking investigations          │  └─────────────────────────────────────┘ │
 │  and building awareness           │                                          │
 │  across every province.           │  Password *        Forgot password?      │
 │                                   │  ┌──────────────────────────────┬──────┐ │
-│  🔒 Encrypted submissions         │  │ 🔒 ••••••••••                │  👁  │ │
-│  👁 Anonymous supported           │  └──────────────────────────────┴──────┘ │
-│  🕘 Transparent tracking          │                                          │
-│  👥 Awareness programmes          │  ┌── after 2 failed attempts ──────────┐ │
+│  # Encrypted submissions         │  │ # ••••••••••                │  o  │    │
+│  o Anonymous supported           │  └──────────────────────────────┴──────┘  │
+│  t Transparent tracking          │                                           │
+│  & Awareness programmes          │  ┌── after 2 failed attempts ──────────┐  │
 │                                   │  │ Security question: What is 4 + 7?   │ │
 │  [ Report without an account ]    │  │ [____]                              │ │
 │                                   │  └─────────────────────────────────────┘ │
@@ -521,7 +521,7 @@ staying visible because it is the page's real purpose.
 │                                   │  [          Sign in          ]           │
 │                                   │  No account yet? Create one              │
 │                                   │  ────────────────────────────────────    │
-│                                   │  👁 You do not need an account to report │
+│                                   │  o You do not need an account to report  │
 │                                   │     Anyone can file a report,            │
 │                                   │     anonymously if they prefer.          │
 │                                   │     [ Report a violation ]               │
@@ -545,8 +545,8 @@ with a 27 rem cap. The same layout serves register, forgot-password and reset.
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │                    ◦ CONFIDENTIAL SUBMISSION                                 │
 │              Report a human rights violation                                 │
-│   Take your time. Only the category, a title, a description and your          │
-│   consent are required — everything else helps but can be left blank.         │
+│   Take your time. Only the category, a title, a description and your         │
+│   consent are required — everything else helps but can be left blank.        │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ ━━━━━━━━━━━━━━━  ──────────────  ──────────────  ──────────────              │
 │ 1. Who is        2. The          3. Evidence     4. Review &                 │
@@ -559,34 +559,34 @@ with a 27 rem cap. The same layout serves register, forgot-password and reset.
 │  │ report. You will still get a reference number to track it — write it   │  │
 │  │ down, because we will have no way to contact you or recover it.        │  │
 │  └────────────────────────────────────────────────────────────────────────┘  │
-│  Full name *            │ Phone number      ← whole block hides when          │
-│  Email address          │ Nationality         anonymous is switched on,       │
-│  Address                                      and its required flags drop     │
+│  Full name *            │ Phone number      ← whole block hides when         │
+│  Email address          │ Nationality         anonymous is switched on,      │
+│  Address                                      and its required flags drop    │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ ▸ STEP 2 — THE INCIDENT                                                      │
-│  Short title * ·························· │ Urgency * [Medium ▾]              │
+│  Short title * ·························· │ Urgency * [Medium ▾]             │
 │  Category of violation * [ ▾ 12 categories ]                                 │
 │  What happened? * ┌───────────────────────────────────────────────────────┐  │
 │                   │ (7 rows, minimum 30 characters)                       │  │
 │                   └───────────────────────────────────────────────────────┘  │
 │  Date [        ] │ Time [        ] │ Number of victims [ 1 ]                 │
 │  Province [ ▾ ] ──AJAX──▸ District [ ▾ ]                                     │
-│  Specific location ·······································                    │
-│  ┌── GPS coordinates (optional) ─────────── [ Use my current location ] ───┐  │
-│  │ Latitude ············   Longitude ············                          │  │
-│  │ Only shared with the officer handling your case.                        │  │
+│  Specific location ·······································                   │
+│  ┌── GPS coordinates (optional) ─────────── [ Use my current location ] ───┐ │
+│  │ Latitude ············   Longitude ············                          │ │
+│  │ Only shared with the officer handling your case.                        │ │
 │  └────────────────────────────────────────────────────────────────────────┘  │
 │  Persons involved │ Organisation involved │ Witness details                  │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ ▸ STEP 3 — EVIDENCE                                                          │
-│  ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐  │
-│  ╎                          ☁ upload                                     ╎  │
-│  ╎            Drop files here, or click to browse                        ╎  │
-│  ╎   JPG PNG WEBP GIF · MP4 MOV · MP3 WAV · PDF DOC DOCX                 ╎  │
-│  ╎          up to 10 files, 20 MB each                                   ╎  │
-│  └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘  │
-│  (📎 clinic-report.pdf 1.2 MB) (📎 photo.jpg 0.8 MB)              Clear     │
-│  ⚠ Never put yourself at risk to gather evidence. A report without any        │
+│  ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐    │
+│  ╎                          ^ upload                                     ╎   │
+│  ╎            Drop files here, or click to browse                        ╎   │
+│  ╎   JPG PNG WEBP GIF · MP4 MOV · MP3 WAV · PDF DOC DOCX                 ╎   │
+│  ╎          up to 10 files, 20 MB each                                   ╎   │
+│  └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘    │
+│  (+ clinic-report.pdf 1.2 MB) (+ photo.jpg 0.8 MB)              Clear        │
+│  ! Never put yourself at risk to gather evidence. A report without any       │
 │    attachments is still investigated.                                        │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │ ▸ STEP 4 — REVIEW & SUBMIT                                                   │
@@ -596,10 +596,10 @@ with a 27 rem cap. The same layout serves register, forgot-password and reset.
 │  │ Province         District           Location       Evidence files      │  │
 │  │ Southern         Choma              Choma market   2 attached          │  │
 │  └────────────────────────────────────────────────────────────────────────┘  │
-│  ☐ Consent declaration * — I confirm this information is true to the best     │
-│    of my knowledge, and consent to it being processed and, where necessary,   │
-│    shared with the officers and authorities required to investigate it.       │
-│  ℹ On submission you receive a reference such as HR-2026-000123.             │
+│  ☐ Consent declaration * — I confirm this information is true to the best    │
+│    of my knowledge, and consent to it being processed and, where necessary,  │
+│    shared with the officers and authorities required to investigate it.      │
+│  i On submission you receive a reference such as HR-2026-000123.             │
 ├──────────────────────────────────────────────────────────────────────────────┤
 │  [ ← Back ]                              Cancel  [ Continue → ] / [ Submit ] │
 └──────────────────────────────────────────────────────────────────────────────┘
@@ -617,7 +617,7 @@ The whole wizard is one POST, so there is no partial server-side state to lose.
 
 ```
 ┌───────────────┬──────────────────────────────────────────────────────────────┐
-│ [◆ HRRAMS]    │ ⌂ / Dashboard    [🔍 search…] [🔔³] [🌙] [DP Daniel Phiri ▾] │
+│ [◆ HRRAMS]    │ ⌂ / Dashboard    [? search…] [!³] [~] [DP Daniel Phiri ▾]    │
 │               ├──────────────────────────────────────────────────────────────┤
 │ OVERVIEW      │ Good morning, Daniel                                         │
 │ ▸ Dashboard   │ Friday, 14 August 2026 · Officer dashboard                   │
@@ -625,25 +625,25 @@ The whole wizard is one POST, so there is no partial server-side state to lose.
 │ CASE WORK     │ ┌──────┐┌──────┐┌──────┐┌──────┐┌──────┐                     │
 │ ▸ My cases    │ │  14  ││   3  ││   1  ││  38  ││ 21 d │  each tile links to │
 │ ▸ Overdue     │ │Active││Over- ││Escal-││Conc- ││ Avg. │  a filtered case    │
-│               │ │cases ││ due  ││ated  ││luded ││resol.│  list              │
+│               │ │cases ││ due  ││ated  ││luded ││resol.│  list               │
 │ MY ACCOUNT    │ └──────┘└──────┘└──────┘└──────┘└──────┘                     │
 │ ▸ My reports  │ ┌─────────────────────────────────┬────────────────────────┐ │
-│ ▸ My profile  │ │ REPORT VOLUME, LAST 12 MONTHS   │ ⚠ NEEDS ATTENTION NOW  │ │
+│ ▸ My profile  │ │ REPORT VOLUME, LAST 12 MONTHS   │ ! NEEDS ATTENTION NOW  │ │
 │               │ │      ╱╲    ╱╲                   │ • Unlawful detention   │ │
 │ [+ New report]│ │  ╱╲╱  ╲╱╲╱  ╲╱╲                 │   CASE-2026-00031 41 d │ │
 │               │ │ ╱                ╲              │ • Unpaid wages         │ │
 │               │ └─────────────────────────────────┤   CASE-2026-00028 36 d │ │
 │               │ ┌───────────────┬───────────────┐ ├────────────────────────┤ │
-│               │ │ BY CATEGORY   │  BY STATUS    │ │ 📅 UPCOMING INTERVIEWS │ │
+│               │ │ BY CATEGORY   │  BY STATUS    │ │ * UPCOMING INTERVIEWS │  │
 │               │ │ ▄▄▄▄▄▄▄▄      │      ◕        │ │ [14 AUG] Complainant   │ │
 │               │ │ ▄▄▄▄▄         │   doughnut    │ │ 09:00 CASE-2026-00031  │ │
 │               │ │ ▄▄▄           │               │ │ [16 AUG] Site witness  │ │
 │               │ └───────────────┴───────────────┘ ├────────────────────────┤ │
-│               │ ┌─────────────────────────────────┤ 🔔 NOTIFICATIONS       │ │
+│               │ ┌─────────────────────────────────┤ ! NOTIFICATIONS       │  │
 │               │ │ MY OPEN CASES                   │ • New case assigned    │ │
-│               │ │ Case │Subject│Pri│Status│Age    │ │ • Info received       │ │
-│               │ │ ─────┼───────┼───┼──────┼────   │ ├────────────────────────┤ │
-│               │ │ …8 rows, row click → case…      │ │ LATEST REPORTS         │ │
+│              │ │ Case │Subject│Pri│Status│Age    │ │ • Info received       │ │
+│             │ │ ─────┼───────┼───┼──────┼────   │ ├────────────────────────┤ │
+│             │ │ …8 rows, row click → case…      │ │ LATEST REPORTS         │ │
 │               │ └─────────────────────────────────┴────────────────────────┘ │
 └───────────────┴──────────────────────────────────────────────────────────────┘
 ```
@@ -669,10 +669,10 @@ slow aggregation never blocks the page.
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │ ← Back to cases                                                              │
-│ Unlawful detention at Kanyama police post        [High priority] [ASSIGNED]   │
+│ Unlawful detention at Kanyama police post        [High priority] [ASSIGNED]  │
 │ Case CASE-2026-00031 · Report HR-2026-000117 · Opened 03 Jul 2026            │
 ├──────────────────────────────────────────────────────────────────────────────┤
-│ 🔔 This case passed its service deadline on 10 Jul 2026. Record progress or   │
+│ ! This case passed its service deadline on 10 Jul 2026. Record progress or   │
 │    escalate it.                                                              │
 ├─────────────────────────────────────────────┬────────────────────────────────┤
 │ THE COMPLAINT                               │ ASSIGNMENT                     │
@@ -690,14 +690,14 @@ slow aggregation never blocks the page.
 │ RECORD AN ACTION                            │ Name    Joseph Tembo           │
 │ ┌────────┬────────┬─────────┬──────┬──────┐ │ Email   joseph@example.org     │
 │ │Case    │Upload  │Schedule │Req.  │Change│ │ Phone   +260 97 000 0005       │
-│ │note    │findings│interview│info  │status│ │ 🔒 Every view is audit-logged. │
+│ │note    │findings│interview│info  │status│ │ # Every view is audit-logged.  │
 │ └────────┴────────┴─────────┴──────┴──────┘ │    (or: "Filed anonymously —   │
 │  ↑ each tab shown only if the permission     │     cannot be contacted")     │
 │    is held; officer sees 5, supervisor 3    ├────────────────────────────────┤
 │ ┌─────────────────────────────────────────┐ │ EVIDENCE                    ③  │
-│ │ Heading ······························· │ │ 📄 clinic-report.pdf  1.2 MB   │
-│ │ Note *  ┌────────────────────────────┐  │ │ 🖼 photo.jpg          0.8 MB   │
-│ │         │                            │  │ │ 🎵 statement.mp3      3.1 MB   │
+│ │ Heading ······························· │ │ D clinic-report.pdf  1.2 MB    │
+│ │ Note *  ┌────────────────────────────┐  │ │ I photo.jpg          0.8 MB    │
+│ │         │                            │  │ │ M statement.mp3      3.1 MB    │
 │ │         └────────────────────────────┘  │ │    ↑ streamed only to          │
 │ │ ☐ Visible to the complainant  [+ Add]   │ │      authorised users          │
 │ └─────────────────────────────────────────┘ ├────────────────────────────────┤
@@ -705,13 +705,13 @@ slow aggregation never blocks the page.
 │ CONCLUDE THE CASE                       [⌄] │ (shown once concluded)         │
 │  Outcome [Resolved ▾]  ← can:case.close     │                                │
 │  Resolution summary * (min 20 chars,        │                                │
-│  shared with the complainant)                │                                │
+│  shared with the complainant)                │                               │
 ├─────────────────────────────────────────────┴────────────────────────────────┤
 │ INVESTIGATION TIMELINE                                          6 entries    │
 │ ●─ Status changed to Investigating           Daniel Phiri · 05 Jul 10:12     │
-│ │   [Assigned] → [Investigating]                                            │
+│ │   [Assigned] → [Investigating]                                             │
 │ ●─ Interview scheduled              [Shared] Daniel Phiri · 04 Jul 16:40     │
-│ │   📅 Scheduled for 14 Aug 2026, 09:00                                      │
+│ │   * Scheduled for 14 Aug 2026, 09:00                                       │
 │ ●─ Evidence uploaded: medical report         Daniel Phiri · 04 Jul 11:20     │
 │ ●─ Case assigned                             Grace Mulenga · 03 Jul 09:05    │
 │    ↑ dot colour encodes entry type                                           │

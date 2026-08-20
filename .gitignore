@@ -16,3 +16,6 @@ Thumbs.db
 .vscode/
 .claude-flow/
 .claude/
+dist/
+
+# Generated Word deliverable (rebuild with tools/build-docx)

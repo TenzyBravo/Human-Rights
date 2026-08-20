@@ -68,11 +68,28 @@ $config = [
     ],
 
     'mail' => [
-        // 'log' writes messages to storage/logs/mail.log instead of sending.
-        'driver'     => 'log',               // log | mail | smtp
+        // log  — write to storage/logs/mail.log, send nothing (development default)
+        // smtp — authenticated SMTP (use this in production)
+        // mail — PHP mail(); many hosts block it and deliverability is poor
+        'driver'     => 'log',
         'from_email' => 'no-reply@hrrams.test',
         'from_name'  => 'HRRAMS Notifications',
-        'smtp'       => ['host' => 'localhost', 'port' => 587, 'user' => '', 'pass' => '', 'secure' => 'tls'],
+        'smtp'       => [
+            'host'        => 'localhost',
+            'port'        => 587,
+            'user'        => '',
+            'pass'        => '',
+            'secure'      => 'tls',   // 'tls' = STARTTLS on 587, 'ssl' = implicit on 465
+            'verify_peer' => true,    // only turn off to diagnose a certificate problem
+            'helo'        => null,    // defaults to the application's own hostname
+        ],
+        // Provider settings, for reference when filling in config.local.php:
+        //   Brevo     smtp-relay.brevo.com    587  tls   user = login, pass = SMTP key
+        //   Mailgun   smtp.mailgun.org        587  tls   user = postmaster@your-domain
+        //   SendGrid  smtp.sendgrid.net       587  tls   user = literally "apikey"
+        //   Resend    smtp.resend.com         587  tls   user = literally "resend"
+        //   Gmail     smtp.gmail.com          587  tls   user = address, pass = app password
+        //   cPanel    mail.your-domain.com    465  ssl   user = the full mailbox address
     ],
 
     'pagination' => ['per_page' => 15],

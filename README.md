@@ -114,6 +114,7 @@ Policy. Details and the reasoning behind each control are in
 |---|---|
 | [SYSTEM-DESIGN-AND-AUTHENTICATION.md](docs/SYSTEM-DESIGN-AND-AUTHENTICATION.md) | **Design phase deliverable** — architecture diagram, ERD, the five wireframes, and the full authentication/RBAC specification with verification evidence |
 | [INSTALLATION.md](docs/INSTALLATION.md) | Requirements, setup for MAMP/XAMPP/LAMP, troubleshooting |
+| [HOSTING-CPANEL.md](docs/HOSTING-CPANEL.md) | **Going live on shared hosting** — database, document root, TLS, SMTP, backups, verification |
 | [ARCHITECTURE.md](docs/ARCHITECTURE.md) | System architecture diagram, request lifecycle, layering |
 | [ERD.md](docs/ERD.md) | Entity-relationship diagram in crow's-foot notation |
 | [DATABASE.md](docs/DATABASE.md) | Table-by-table reference, indexes, conventions |
