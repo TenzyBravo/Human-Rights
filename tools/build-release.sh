@@ -65,7 +65,10 @@ Before this will run you must, in order:
   5. Run the readiness check:  php tools/preflight.php
   6. Delete or re-password every demo account in Administration -> Users.
 
-Full instructions: docs/HOSTING-CPANEL.md
+Full instructions:
+  Hostinger      -> docs/HOSTING-HOSTINGER.md   (hPanel; app must live outside public_html)
+  Other cPanel   -> docs/HOSTING-CPANEL.md
+  VPS / your own -> docs/DEPLOYMENT.md
 TXT
 
 ( cd "$DIST" && zip -qr "$NAME.zip" "$NAME" -x '*.DS_Store' )
@@ -107,8 +110,11 @@ fi
 
 for required in \
   public/index.php public/.htaccess public/.user.ini \
+  public/hrrams-path.example.php \
   app/Core/App.php app/Core/Smtp.php config/routes.php \
-  database/schema.sql database/seed.sql tools/preflight.php
+  database/schema.sql database/seed.sql \
+  database/schema-cpanel.sql database/seed-cpanel.sql \
+  docs/HOSTING-HOSTINGER.md docs/HOSTING-CPANEL.md tools/preflight.php
 do
   if contains "$required"; then
     echo "  ok    $required"

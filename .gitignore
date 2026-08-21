@@ -19,3 +19,6 @@ Thumbs.db
 dist/
 
 # Generated Word deliverable (rebuild with tools/build-docx)
+
+# Host-specific app-root pointer (created on the server)
+public/hrrams-path.php
